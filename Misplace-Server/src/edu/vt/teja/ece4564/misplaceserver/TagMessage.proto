@@ -1,0 +1,7 @@
+
+message Tag{
+	required double latitude = 1;
+	required double longitude = 2;
+	required string time = 3;
+	required string message = 4;
+}

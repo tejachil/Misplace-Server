@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>edu.vt.teja.ece4564.misplaceserver.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/misplace_server/greet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>edu.vt.teja.ece4564.misplaceserver.server.UserService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>userServlet</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>tagServlet</servlet-name>
+    <servlet-class>edu.vt.teja.ece4564.misplaceserver.server.TagService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>tagServlet</servlet-name>
+    <url-pattern>/tag</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Misplace_Server.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
