@@ -1,2 +1,3 @@
 # Module misplace_server
 # RPC service class, partial path of RPC policy file
+edu.vt.teja.ece4564.misplaceserver.client.GreetingService, E6B72F996AA2B40F04BA5EE5969B3E19.gwt.rpc
