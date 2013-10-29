@@ -1,0 +1,2 @@
+serviceClass: edu.vt.teja.ece4564.misplaceserver.client.GreetingService
+path: E6B72F996AA2B40F04BA5EE5969B3E19.gwt.rpc

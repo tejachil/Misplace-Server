@@ -1,0 +1,25 @@
+Misplace API
+
+/user?
+	GET Method
+	params: 
+		action: add (add user), edit (modify user params)
+		firstname: firstname is currently not used for anything
+		lastname: is currently not used for anything
+		password: used to authenticate the user
+		username: used to referance the user to his/her tags
+		devid: the unique device ID of the phone to organize tags based on devices
+
+/tag?
+	GET Method
+	params:
+		action: add (add new tag), get (query tags)
+		username: used to referance the user to his/her tags for query and add
+		devid: the unique device ID of the phone to organize tags based on devices for query and add
+		tagid: the ID of the tag being added
+
+	POST Method
+		action: add (add new tag)
+		tagid: the ID of the tag being added
+		username: used to referance the user to his/her tags for query and add
+		Google Protocol Buffer Message of type TagMessage.Tag is sent
