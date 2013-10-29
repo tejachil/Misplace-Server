@@ -21,7 +21,6 @@ public class UserService extends HttpServlet {
 			res.getWriter().println(Global.USERS_.toString());
 		}
 		else if(req.getParameter("action").equals("add") && 
-				!Global.USERS_.toString().contains(req.getParameter("devid"))&& 
 				!Global.USERS_.toString().contains(req.getParameter("username"))){
 			
 			User newUser = new User(req.getParameter("firstname"), 
